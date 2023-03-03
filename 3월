@@ -1,7 +1,65 @@
-// 클래스의 예 // 
+# 1 // 클래스의 예 // 
 
 public class Television {
     int channel; 
     int volume;
     boolean isOn;
 }
+
+
+
+# 2 // 객체 생성하기 // 
+public class Television {
+	int channel;
+    int volume;
+    boolean isOn;
+
+	
+	public static void main(String[] args) {
+
+		Television tv = new Television();
+		tv.channel = 7; 
+		tv.volume = 9;
+		tv.isOn = true;
+
+		System.out.println("텔레비전의 채널은" + tv.channel + "이고 볼륨은 " + tv.volume + "입니다.");
+		    }
+		}
+
+
+
+# 3 // 여러개의 객체 생성하기 // 
+public class Television {
+	int channel;
+    int volume;
+    boolean isOn;
+	
+	public static void main(String[] args) {
+
+		Television mytv = new Television();
+		
+		mytv.channel = 7; 
+		mytv.volume = 9;
+		mytv.isOn = true;
+
+		
+		Television yourtv = new Television();
+		yourtv.channel = 7; 
+		yourtv.volume = 9;
+		yourtv.isOn = true;
+		
+		System.out.println("나의 텔레비전의 채널은" + mytv.channel + "이고 볼륨은 " + mytv.volume + "입니다.");
+		System.out.println("너의 텔레비전의 채널은" + yourtv.channel + "이고 볼륨은 " + yourtv.volume + "입니다.");
+		    }
+		}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+       
+# 4 // // 
