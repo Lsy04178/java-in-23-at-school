@@ -1,0 +1,7 @@
+// 클래스의 예 // 
+
+public class Television {
+    int channel; 
+    int volume;
+    boolean isOn;
+}
