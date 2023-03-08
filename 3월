@@ -11,8 +11,8 @@ public class Television {
 # 2 // 객체 생성하기 // 
 public class Television {
 	int channel;
-    int volume;
-    boolean isOn;
+	int volume;
+	boolean isOn;
 
 	
 	public static void main(String[] args) {
@@ -28,7 +28,7 @@ public class Television {
 
 
 
-# 3 // 여러개의 객체 생성하기 // 
+# 3 // 여러개의 객체 생성하기 // p.204
 public class Television {
 	int channel;
     int volume;
@@ -62,4 +62,4 @@ public class Television {
         
         
        
-# 4 // // 
+ 
