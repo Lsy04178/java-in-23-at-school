@@ -138,4 +138,140 @@ public class TelevisionTest {
 
 
 
-//p.
+//p.//
+package syjava;
+
+public class Television {
+	int channel;
+	int volume;
+	boolean onOff;
+	
+	
+	void print() {
+		System.out.println("채널은" + channel + ", 볼륨은" + volume + "입니다.");
+	}
+	
+	int getChannel() {
+		return channel;
+	}
+	
+	
+	void setChannel(int ch) {
+		channel = ch;
+	}
+}
+
+
+
+
+package syjava;
+
+public class TelevisionTest {
+
+	public static void main(String[] args) {
+		Television myTv = new Television();
+		myTv.setChannel(11);
+		int ch = myTv.getChannel();
+		System.out.println("현재 채널은" + ch + "입니다");
+	}
+
+}
+
+
+~~~실~~행~~결~~과~~~
+현재 채널은11입니다
+
+
+
+
+
+
+
+
+
+
+
+
+//p.217//
+package syjava;
+
+public class Math {
+	int add(int x, int y) {
+		return x+y;
+	}
+
+}
+
+
+
+
+package syjava;
+
+public class MathTest {
+
+	public static void main(String[] args) {
+		int sum;
+		Math obj = new Math();
+		sum = obj.add(2, 3);
+		System.out.println("2와 3의 합은" + sum);
+		sum = obj.add(7, 8);
+		System.out.println("7과 8의 합은 " + sum);
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+// p.221//
+package syjava;
+
+public class Car {
+	String color;
+	int speed;
+	int gear;
+	
+	
+	public String toString() {
+		return "Car [color= " + color + ", speed=" + speed + ", gear=" + gear + "]";
+	}
+	
+	void changeGear(int g) {
+		gear = g;
+	}
+	
+	void speedUp() {
+		speed = speed + 10;
+	}
+	
+	void speedDown() {
+		speed = speed - 10;
+	}
+}
+
+
+
+
+package syjava;
+
+public class CarTest {
+
+	public static void main(String[] args) {
+		Car myCar = new Car();
+		myCar.changeGear(1);
+		myCar.speedUp();
+		System.out.println(myCar);
+
+	}
+
+}
+
+
+/~~~~ 실행결과 Car [color= null, speed=10, gear=1] ~~~~/
