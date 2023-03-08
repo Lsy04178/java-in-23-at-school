@@ -60,6 +60,82 @@ public class Television {
         
         
         
-        
+// p.210 //
+	package test;
+
+	public class Boxtest {
+	public static void main(String[] args) {
+	
+		int width;
+		int length;
+		int height;
+		
+		
+			
+		box b;
+		b = new Box();
+			
+		b.width = 20;
+		b.length = 20;
+		b.height = 30;
+		System.out.println("상자의 가로 세로 높이는" + b.width + ","+ b.length + "," + b.height+ "입니다.");
+	}
+
+}
        
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ //p.212//
+ package syjava;
+
+public class Television {
+	int channel;
+	int volume;
+	boolean onOff;
+	void print() {
+		System.out.println("채널은" + channel + ", 볼륨은" + volume + "입니다.");
+	}
+}
+
+
+package syjava;
+
+public class TelevisionTest {
+
+	public static void main(String[] args) {
+		Television myTv = new Television();
+		myTv.channel = 7;
+		myTv.volume = 9;
+		myTv.onOff = true;
+		myTv.print();
+	}
+
+}
+
+
+실행결과 = 채널은7, 볼륨은9입니다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//p.
