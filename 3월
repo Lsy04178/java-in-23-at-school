@@ -1,6 +1,6 @@
 # 1 // 클래스의 예 // 
 
-public class Television {
+public class syTel {
     int channel; 
     int volume;
     boolean isOn;
@@ -9,7 +9,7 @@ public class Television {
 
 
 # 2 // 객체 생성하기 // 
-public class Television {
+public class syTel {
 	int channel;
 	int volume;
 	boolean isOn;
@@ -17,41 +17,49 @@ public class Television {
 	
 	public static void main(String[] args) {
 
-		Television tv = new Television();
-		tv.channel = 7; 
-		tv.volume = 9;
+		syTel tv = new syTel();
+		tv.channel = 52; 
+		tv.volume = 16;
 		tv.isOn = true;
 
-		System.out.println("텔레비전의 채널은" + tv.channel + "이고 볼륨은 " + tv.volume + "입니다.");
-		    }
+		System.out.println("현재 상태" + tv.isOn +" 입니다. 채널은" + tv.channel + ", 볼륨은 " + tv.volume + "입니다.");
+			    	    }
 		}
+		
+		//실행결과  현재 상태 true 입니다. 채널은52, 볼륨은 16입니다. //
 
 
 
 # 3 // 여러개의 객체 생성하기 // p.204
-public class Television {
+public class syTel2 {
 	int channel;
-    int volume;
-    boolean isOn;
+    	int volume;
+    	boolean isOn;
 	
 	public static void main(String[] args) {
 
-		Television mytv = new Television();
+		syTel2 mtv = new syTel2();
 		
-		mytv.channel = 7; 
-		mytv.volume = 9;
-		mytv.isOn = true;
+		mtv.channel = 47; 
+		mtv.volume = 9;
+		mtv.isOn = true;
 
 		
-		Television yourtv = new Television();
-		yourtv.channel = 7; 
-		yourtv.volume = 9;
-		yourtv.isOn = true;
+		syTel2 ytv = new syTel2();
+		ytv.channel = 77; 
+		ytv.volume = 19;
+		ytv.isOn = true;
 		
-		System.out.println("나의 텔레비전의 채널은" + mytv.channel + "이고 볼륨은 " + mytv.volume + "입니다.");
-		System.out.println("너의 텔레비전의 채널은" + yourtv.channel + "이고 볼륨은 " + yourtv.volume + "입니다.");
-		    }
-		}
+	
+		
+		System.out.println("mtv " + mtv.channel + "채널 이고 볼륨은 " + mtv.volume + "입니다.");
+		System.out.println("ytv 채널은 " + ytv.channel + "이고 볼륨은 " + ytv.volume + "입니다.");
+		    
+	if(mtv.volume > 20) {
+		System.out.println("볼륨이 너무 큽니다 줄여주세요.");
+}
+}
+}
         
         
         
@@ -66,18 +74,18 @@ public class Television {
 	public class Boxtest {
 	public static void main(String[] args) {
 	
-		int width;
-		int length;
-		int height;
+		int w;
+		int len;
+		int h;
 		
 		
 			
 		box b;
 		b = new Box();
 			
-		b.width = 20;
-		b.length = 20;
-		b.height = 30;
+		b.w = 10;
+		b.len = 40;
+		b.h = 0;
 		System.out.println("상자의 가로 세로 높이는" + b.width + ","+ b.length + "," + b.height+ "입니다.");
 	}
 
@@ -95,7 +103,7 @@ public class Television {
  
  
  //p.212//
- package syjava;
+package syjava;
 
 public class Television {
 	int channel;
