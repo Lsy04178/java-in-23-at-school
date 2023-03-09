@@ -1,0 +1,45 @@
+// p.221//
+package syjava;
+
+public class Car {
+	String color;
+	int speed;
+	int gear;
+	
+	
+	public String toString() {
+		return "Car [color= " + color + ", speed=" + speed + ", gear=" + gear + "]";
+	}
+	
+	void changeGear(int g) {
+		gear = g;
+	}
+	
+	void speedUp() {
+		speed = speed + 10;
+	}
+	
+	void speedDown() {
+		speed = speed - 10;
+	}
+}
+
+
+
+
+package syjava;
+
+public class CarTest {
+
+	public static void main(String[] args) {
+		Car myCar = new Car();
+		myCar.changeGear(1);
+		myCar.speedUp();
+		System.out.println(myCar);
+
+	}
+
+}
+
+
+/~~~~ 실행결과 Car [color= null, speed=10, gear=1] ~~~~/
