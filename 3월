@@ -204,11 +204,11 @@ public class TelevisionTest {
 package syjava;
 
 public class Math {
-	int add(int x, int y) {
-		return x+y;
-	}
-
+		int add(int x, int y , int k) {
+			return x*y/2;
+		}
 }
+
 
 
 
@@ -219,18 +219,20 @@ public class MathTest {
 
 	public static void main(String[] args) {
 		int sum;
+		
 		Math obj = new Math();
-		sum = obj.add(2, 3);
-		System.out.println("2와 3의 합은" + sum);
-		sum = obj.add(7, 8);
-		System.out.println("7과 8의 합은 " + sum);
+		sum = obj.add(365, 3, 2);
+		System.out.println("3년을 반으로 나누면 몇일인가요? " + sum  );
+		sum = obj.add(10, 8, 0);
+		System.out.println("10과 8의 합은 " + sum);
+
 
 	}
 
 }
 
 
-
+//  실행결과  3년을 반으로 나누면 몇일인가요? 547         //          10과 8의 합은 40          //
 
 
 
