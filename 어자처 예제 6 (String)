@@ -1,0 +1,68 @@
+//p.231-232//
+
+
+package 서연이꺼;
+
+public class String0313 {
+
+	public static void main(String[] args) {
+		
+			String korinssa = "안녕하세요";
+			String enginssa = "Hello";
+			String jpainssa = "こんにちは";
+			String chainssa = "你好";
+			String line = "------------------------------------";
+			
+			String insa1, insa2, insa3, insa4, insa5, insa6, insa7 ;
+			
+			//String frainssa = "Bonjour";//
+			//String vetinssa = "Xin chào";//
+			//String spainssa = "hola!";//
+			
+			System.out.println("여러 나라의 '" +  korinssa +"' 인사법을 알아봅시다." );
+			
+			insa1 = korinssa.concat(" , 순서대로 영어, 일본어, 중국어(간체)");
+			insa2 = enginssa.concat(" ");
+			insa3 = enginssa.toLowerCase();
+			insa4 = enginssa.toUpperCase();
+			
+		
+			
+			System.out.println(insa1);
+			System.out.println(line);
+			
+			System.out.println(insa2);
+			System.out.println(insa3 + " 소문자");
+			System.out.println(insa4 + " 대문자");
+			System.out.println(line);
+			
+			System.out.println(jpainssa);
+			System.out.println(line);
+			System.out.println(chainssa);
+			System.out.println(line);
+			 
+			
+	}
+
+}
+
+
+
+
+--------실행결과---------
+
+여러 나라의 '안녕하세요' 인사법을 알아봅시다.
+안녕하세요 , 순서대로 영어, 일본어, 중국어(간체)
+------------------------------------
+Hello 
+hello 소문자
+HELLO 대문자
+------------------------------------
+こんにちは
+------------------------------------
+你好
+------------------------------------
+
+
+
+Good ♡ ́・ᴗ・ ♡
