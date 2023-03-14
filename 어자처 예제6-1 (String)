@@ -1,1 +1,43 @@
+package 서연이꺼;
 
+public class String0313 {
+
+	public static void main(String[] args) {
+		
+			String piday = "3.14";
+			String today = "pI dAy";
+			String s1,s2,s3,s4;
+			
+			System.out.println("오늘은 " + piday +" " + today);
+			
+			s1 = piday.substring(1,4);
+			s2 = today.toUpperCase();
+			s3 = today.toLowerCase();
+			
+			s4 = piday.replace('b','B');
+			
+			System.out.println( );
+			
+			System.out.println("3" + s1);
+			System.out.println(s2 + "!!!");
+			System.out.println(s3 + "!!!");
+			
+			System.out.println( );
+			
+			System.out.println(s4 +" " + s2 +"!!!");
+	}
+
+}
+
+
+
+
+
+------실행결과------
+오늘은 3.14 pI dAy
+
+3.14
+PI DAY!!!
+pi day!!!
+
+3.14 PI DAY!!!
