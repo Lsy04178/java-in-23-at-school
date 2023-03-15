@@ -1,1 +1,45 @@
+package 서연이꺼;
 
+import java.util.Scanner;
+
+public class stringclass {
+
+	public static void main(String a[]) {
+		
+		String stu;
+		Scanner scn = new Scanner(System.in);
+		
+		System.out.println("학번을 입력하세요");
+		
+		while(true){
+			System.out.print("> ");
+			stu = scn.next();
+			
+			if(stu.equals(" ") == true)
+				break;
+			if(stu.matches("(.*)22(.*)")) {
+				System.out.println("22 학번이 맞으시군요");
+			} else {
+				System.out.println("당신은,,,복학생이군요,,");
+			}
+			
+		}
+	}
+
+	
+		
+	}
+
+
+
+
+
+
+----------실행결과----------
+
+학번을 입력하세요
+> 2201398
+22 학번이 맞으시군요
+> 1901138
+당신은,,,복학생이군요,,
+> 
