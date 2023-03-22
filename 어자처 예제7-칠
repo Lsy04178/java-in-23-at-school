@@ -1,0 +1,48 @@
+public class Ourtimeisrunningout {
+    private int hour;
+    private int minute;
+    private int second;
+
+
+    public Ourtimeisrunningout() {
+        this(0,0,0);
+    }
+
+    public Ourtimeisrunningout(int h, int m, int s) {
+        hour = ((h >= 0 && h < 24) ? h : 0);
+        minute = ((m >= 0 && m < 60) ? m :0);
+        second = ((s >-0 && s < 60) ? s :0);
+    }
+
+
+    public String toString() {
+        return String.format("%02d:%02d:%02d" , hour , minute , second);
+    }
+    }
+
+
+
+
+
+
+public class Main {
+    public static void main(String[] args) {
+    Ourtimeisrunningout Time = new Ourtimeisrunningout();
+        System.out.println("기본 생성자 호풀 후 시간 = " + Time.toString());
+
+    Ourtimeisrunningout Time2 = new Ourtimeisrunningout(13,55,8);
+        System.out.println("오늘의 추천곡은 MUSE의 Time is running out 입니다." + Time2.toString());
+
+    Ourtimeisrunningout Time3 = new Ourtimeisrunningout(99,66,77);
+        System.out.println("클래스 이름이 왜이러냐구요? ,,, 그건 제 마음입니다 " + Time3.toString() + "이건 올바르지 않은 시간 설정 후 시간 입당ㅇ~~");
+    }
+}
+
+
+
+
+
+
+기본 생성자 호풀 후 시간 = 00:00:00
+오늘의 추천곡은 MUSE의 Time is running out 입니다.13:55:08
+클래스 이름이 왜이러냐구요? ,,, 그건 제 마음입니다 00:00:00이건 올바르지 않은 시간 설정 후 시간 입당ㅇ~~
