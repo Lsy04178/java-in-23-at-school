@@ -1,0 +1,49 @@
+///클래스 1 
+public class customer {
+    private int cusnumber;
+    private String name;
+    private int number;
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+}
+
+
+
+
+
+// 메인 클래스
+public class Main {
+    public static void main(String[] args) {
+        customer aaa = new customer();
+        aaa.setName("sera");
+        aaa.setNumber(432);
+        System.out.println("이름 : " + aaa.getName() + " 고객님의 번호는 " + aaa.getNumber() + " 입니다.");
+
+
+    }
+}
+
+
+
+
+
+
+
+
+---------실행결과---------
+이름 : sera 고객님의 번호는 432 입니다.
