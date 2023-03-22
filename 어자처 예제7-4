@@ -1,0 +1,47 @@
+//TV 클래스
+
+public class TV{
+    private int channel;
+    private int volume;
+    private boolean onOrOff;
+
+    TV(int c , int v , boolean o) {
+        channel = c;
+        volume = v;
+        onOrOff = o;
+    }
+
+
+    void print() {
+        System.out.println(" 현재 상태 " + onOrOff + "채널은" + channel + "번 이고, 현재 볼륨은 " +volume+ " 입니다 ." );
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+// 메인 클래스
+public class Main {
+    public static void main(String[] args) {
+    TV mytv = new TV(33,80,true) ;
+    mytv.print();
+    TV namTV = new TV(34,15,false);
+    namTV.print();
+    }
+}
+
+
+
+
+
+----------실행결과----------
+
+현재 상태 true 채널은33번 이고, 현재 볼륨은 80 입니다 .
+현재 상태 false 채널은34번 이고, 현재 볼륨은 15 입니다 .
