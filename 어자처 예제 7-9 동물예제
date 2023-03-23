@@ -1,0 +1,88 @@
+public class Animal {
+    private double weight;
+    private String picture;
+
+    protected void eat() {
+        System.out.println("먹고있어요");
+    }
+    void sleep() {
+        System.out.println("자고있어요");
+    }
+    public double getWeight() {
+        return weight;
+    }
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+    public String getPicture() {
+        return picture;
+    }
+    public void setPicture(String picture) {
+        this.picture = picture;
+    }
+}
+
+
+public class Lion extends Animal {
+    private int legs = 4;
+
+    public int getLegs() {
+        return legs;
+    }
+    public void setLegs(int legs){
+        this.legs = legs;
+    }
+    public void roar() {
+        System.out.println("으르렁 그르렁 해요");
+    }
+
+}
+
+
+
+
+
+public class Eagle extends Animal{
+    private int wings = 2;
+    
+    public int getWings() {
+        return wings;
+    }
+    public void setWings(int wings) {
+        this.wings = wings;
+    }
+    public void fly() {
+        System.out.println("독수리는 날고 있어요");
+    }
+}
+
+
+public class AnimalTest {
+    public static void main(String[] args) {
+        Lion lion = new Lion();
+        lion.eat();
+        lion.sleep();
+        lion.roar();
+
+        System.out.println("--------------------");
+
+        Eagle eagle = new Eagle();
+        eagle.eat();
+        eagle.sleep();
+        eagle.fly();
+        eagle.sleep();
+    }
+}
+
+
+
+
+--결과--
+먹고있어요
+자고있어요
+으르렁 그르렁 해요
+--------------------
+먹고있어요
+자고있어요
+독수리는 날고 있어요
+자고있어요
