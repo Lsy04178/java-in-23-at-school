@@ -1,0 +1,45 @@
+public class Point {
+    private int x , y;
+
+    public Point(int a, int b) {
+        x=a;
+        y=b;
+    }
+
+    @Override
+    public String toString() {
+        return "point [ x =" + x +", y=" + y + "]";
+    }
+}
+
+
+
+
+
+public class Circle {
+    private int radius;
+    private Point center;
+
+    public Circle(Point p , int r) {
+        center=p;
+        radius=r;
+    }
+    @Override
+    public String toString() {
+        return "Circle [radius = " + radius + ", center = " + center + "]";
+    }
+}
+
+
+
+public class CircleTest {
+    public static void main(String[] args) {
+        Point p = new Point(25,78);
+        Circle c = new Circle(p,10);
+        System.out.println(c);
+    }
+}
+
+
+
+Circle [radius = 10, center = point [ x =25, y=78]]
