@@ -1,0 +1,9 @@
+public class Car1Test {
+    public static void main(String[] args) {
+        Car1 c1 = new Car1("s600" , "white",80);
+        Car1 c2 = new Car1("E370" , "black", 88);
+        int n = Car1.getNumberOfCars();
+
+        System.out.println("지금까지 생성된 자동차 수 " + n);
+    }
+}
