@@ -1,0 +1,11 @@
+public class EmployeeTest {
+    public static void main(String[] args) {
+        Employee e1,e2,e3;
+        e1 = new Employee("김철수" , 35000);
+        e2 = new Employee("정훈이" , 33333);
+        e3 = new Employee("신짱구" , 12345);
+
+        int n = Employee.getCount();
+        System.out.println("현재의 지원 수 " + n);
+    }
+}
