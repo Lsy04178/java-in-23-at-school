@@ -1,0 +1,10 @@
+public class MyClass {
+    static int x;
+    int y;
+
+
+    static {
+        x = 10;
+        System.out.println("정적 불록이 호출되었음 : " );
+    }
+}
