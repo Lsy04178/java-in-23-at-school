@@ -5,3 +5,14 @@ public class ManagerTest {
         jhh.test();
     }
 }
+
+
+
+
+
+
+
+Employee [ name = 정훈이, address = 태백, salary = 10000000, rrn = 123456 ] 
+name  =  정훈이
+address  =  태백
+salary  =  10000000
