@@ -1,0 +1,13 @@
+public class Manager extends Employee1 {
+    private int bonus;
+    public Manager(String name, String address, int salary, int rrrnnn , int bonus) {
+        super(name, address, salary, rrrnnn);
+        this.bonus = bonus;
+    }
+
+    void test() {
+        System.out.println("name  =  " + name);
+        System.out.println("address  =  " + address);
+        System.out.println("salary  =  " + salary);
+    }
+}
