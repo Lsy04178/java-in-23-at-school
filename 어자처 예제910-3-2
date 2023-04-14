@@ -1,0 +1,7 @@
+public class ManagerTest {
+    public static void main(String[] args) {
+        Manager jhh = new Manager("정훈이" , "태백" , 10000000 , 123456 ,500000);
+        System.out.println(jhh);
+        jhh.test();
+    }
+}
