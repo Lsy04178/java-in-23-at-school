@@ -1,0 +1,69 @@
+ublic class Car {
+  private String model;
+  private String color;
+  private int speed;
+
+// 상수 = 한번 초기화되면 변경못함
+// final keyword 사용
+// static으로 만들어야함
+// 상수는 대문자로
+// 상수는 public으로 선언
+// public static final int MAX_SPEED = 350;
+  public static final int MAX_SPEED;
+  static 
+  {
+    MAX_SPEED = 350;
+    System.out.println(" 최고 속도가 초기화되었습니다. ");
+  }
+
+  {
+    model = "제네시스";
+    color = "블랙핑크";
+  }
+
+// 자동차의 시리얼 와그작 수
+  private int id;
+// 정적멤버변수로 만들고 모든 인스턴스가 이 변수를 공유하도록　しましょう。
+  private static int numbers = 0;
+
+// static method
+// static method는 instance method를 호출할 수 없어용 ㅜㅜ 
+  public static int getNumbers() {
+  // print();
+    return numbers;
+  }
+
+// instance method : instance가 생성되어야만 존재하는 메소드는?
+  public void print() {
+    System.out.println("안녕앙ㄴ녕");
+  }
+
+// 생성자 
+  /* id = ++numbers ; */
+  public Car(String argModel, String argColor, int argSpeed ){
+    id = ++numbers;
+    model = argModel;
+    color = argColor;
+    speed = argSpeed;
+    // max_speed = 500;
+  }
+
+
+  public static void main(String[] args) {
+    Car c1, c2, c3;
+    c1 = new Car("s600", "white", 80);
+    c2 = new Car("E500", "blue", 20);
+    c3 = new Car("E300", "gray", 160);
+
+    // System.out.println("생성된 자동차 수 : " + c1.getNumbers());
+    // System.out.println("생성된 자동차 수 : " + c2.getNumbers());
+    // System.out.println("생성된 자동차 수 : " + c3.getNumbers());
+    System.out.println("생성된 자동차 수 : " + Car.getNumbers());
+
+    // 자바의 수학관련 라이브러리 클래스 = ? 정적 메서드를 이용함 ㅇㅇ
+    double d = Math.sqrt(9);
+    System.out.println("9의 제곱근 뭔지 아는가? 나는 알지 바로 !  " + d);
+
+    System.out.println(Car.MAX_SPEED);
+  }
+}
