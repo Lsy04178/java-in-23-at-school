@@ -1,0 +1,6 @@
+public class Test {
+  public static void main(String[] args) {
+    // Derived d = new Derived();
+    Derived d = new Derived("김수환무거북이와두루미삼정법사먹박사??");
+  }
+}
