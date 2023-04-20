@@ -1,0 +1,47 @@
+public class Person {
+  /*
+   * member variable은 특별한 이유가 없는한 private로 만들  member variable을 클래스 외부에서 접근해야 한다면 그를 위한 method를 public으로 구현해라. 네 마님 
+   * 예를 들어,  myAge라는 member variable에 값을 설정해야 하는 메소드는 setAge로, myAge라는 member variable의 값을 읽어오는 메소드는 getAge로 public 접근제어지정자를 명시하여 구현하면 ok 
+   * 이래 하면~  member variable에 잘못된 값이 설정되는 것을 막을 수도 있고  그 클래스를 버전업하면서 member variable의 이름을 변경해도 밖에 애는 암만 해도 모른다 
+
+
+
+
+  // 접근제어지정자 public, protected, default, private ? public이 명시된 member (variable|method)는 그 클래스 내부든 외부 어느 곳에서든 접근가능 
+ //protected가 명시된 member는 그 클래스 내부, 그리고 그 클래스의 자식, 같은 패키지에 속한 다른 클래스에서도 접근 접근제어지정자가 명시되지 않으면 default 접근제어지정자
+// ??? 접근제어지정자가 명시된 member는 그 클래스 내부, 그리고 그 클래스와 같은 패지지에 속한 다른 클래스에서도 접근가능 ㅇㅇ
+   
+   
+  멤버 변수를 private로 설정하는 이유
+   1. 잘못된 값을 설정하는 것을 막아줄 필요
+   2. 읽기전용 멤버 변수로 만들기 ok
+   3. 클래스 소스코드를 업그레이드 하면 같은 클래스를 사용하는 다른 코드에영향을 최소화할 수 있다. 
+
+  private String name="정훈희";
+  private int myAge;
+  protected String dept= "컴정";
+  //String dept= "컴정 사실은 컴정 대빵이라고 하고싶음 "; 다른 패키지 접근 불가 ㅇㅇ
+
+  public String getDept() {
+    return dept;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public void setAge(int age) {
+    if (age >= 0 && age <=150)
+      this.myAge = age;
+    System.out.println("나이의 범위는 0부터 150까지입니다.");
+  }
+
+  public int getAge() {
+    return myAge;
+  }
+
+
+  private void test() {
+    System.out.println(name);
+  }
+}
