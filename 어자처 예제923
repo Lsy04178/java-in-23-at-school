@@ -1,0 +1,22 @@
+//올렸나? 안올렸는지 몰라서 한번 더 올릴게용~
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import java.awt.FlowLayout;
+
+public class MyFinal extends JFrame{
+    public MyFinal() {
+      setSize(300, 300);
+      setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      setTitle("내 프레임 나ㅡ의 것 -?");
+      setLayout(new FlowLayout());
+
+      JButton button = new JButton("버튼 눌러봐 크크크");
+      add(button);
+      setVisible(true);
+
+    }
+    public static void main(String[] args) {
+      MyFinal f = new MyFinal();
+    }
+}
