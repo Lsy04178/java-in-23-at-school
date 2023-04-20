@@ -1,0 +1,31 @@
+package objectclass;
+
+public class Car {
+  String brand;
+  String model;
+
+  public Car(String brand, String model) {
+    this.brand = brand;
+    this.model = model;
+  }
+  public Car() {
+    this("Unknown", "Unknown");
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    if (obj == null) return false;
+    // obj가 Car 클래스의 인스턴스가 아니면 바로 false를 반환하자. 
+    // instanceof o
+    if (obj instanceof Car == false) return false;
+
+    // obj는 Car 클래스의 객체라 가정
+    // 그래야, Car 클래스의 인스턴스의 brand, model 멤버에 접근 
+    // 하향 형변환
+    Car yourCar = (Car)obj;
+    if (yourCar.brand.equals(brand) && yourCar.model.equals(model)) {
+      return true;
+    }
+    return false;
+  }
+}
