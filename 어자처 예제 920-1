@@ -1,0 +1,4 @@
+abstract public class Comparable {
+    // me 크면 1, anotherVal 하고 값이 같으면 0, me 작으면 -1
+    public abstract int compareTo(Comparable anotherVal);
+}
